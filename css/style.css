@@ -9,7 +9,7 @@ body {
   "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   letter-spacing: .8px;
   word-break: break-all;
   color: #333;
@@ -35,10 +35,7 @@ img {
   border-style: none;
 }
 
-ul,
-li {
-  list-style: none;
-}
+
 
 .pc-only {
   display: block;
@@ -52,22 +49,21 @@ li {
  文字
 ---------------------------------*/
 .heading-primary {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
-  line-height: 1;
-  display: inline-block;
-  letter-spacing: .2em;
-  text-transform: lowercase;
-  color: #f39ac7;
+  font-family: 'Open Sans', sans-serif;
+  color: #F7971E;
+}
+
+.mb-2 {
+  font-size: 48px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .section-heading {
-  margin-bottom: 10px;
   text-align: center;
 }
 
 .section-lead {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -78,9 +74,6 @@ li {
   background-color: #fff;
 }
 
-.section {
-  padding: 120px 0;
-}
 
 .inner {
   max-width: 1320px;
@@ -99,31 +92,26 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 540px;
+  height: 340px;
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
-.logo-name {
-  font-family: "Amatic SC", cursive;
-  font-size: 32px;
-  line-height: 1;
-  display: block;
-  margin-bottom: 5px;
-  text-align: center;
-  color: #757575;
-}
 
 .logo {
   text-align: center;
 }
 
 .logo-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 88px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1;
   display: block;
-  letter-spacing: .1em;
-  color: #f39ac7;
+  color: #fff;
+  
 }
 
 .logo-text {
@@ -131,7 +119,7 @@ li {
   display: block;
   margin-top: 10px;
   text-align: center;
-  letter-spacing: .2em;
+  color: #fff;
 }
 
 /*--------------------------------
@@ -139,7 +127,7 @@ li {
 ---------------------------------*/
 .gnav {
   z-index: 1;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 10px;
 }
 
@@ -157,7 +145,6 @@ li {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: .1em;
-  text-transform: lowercase;
   color: #333;
 }
 
@@ -178,29 +165,58 @@ li {
 }
 
 /*--------------------------------
- Feature
+ About
 ---------------------------------*/
-.feature-section .inner {
-  max-width: 1000px;
+.about-section .inner {
+  max-width: 800px;
+  margin-bottom: 100px;
 }
 
-.feature-item {
+.about-item {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.feature-image-wrapper {
-  flex: 0 0 48%;
-  margin-right: 40px;
+.about-image-wrapper {
+  flex: 0 0 30%;
+  margin-right: 60px;
 }
 
-.feature-body {
+.about-body {
   flex: 1;
 }
 
-.feature-body p:not(:last-child) {
+.fa-github {
+  color: gray;
+}
+
+table tr {
+  height: 23px;
+}
+
+table th {
+  text-align: left;
+}
+
+table td {
+  padding-left: 50px;
+}
+
+table td a {
+  color: #5B86E5;
+}
+
+.about-text {
+  line-height: 1.5;
+  margin-top: 14px;
+}
+
+.about-body p:not(:last-child) {
   margin-bottom: 20px;
 }
+
+
 
 /*--------------------------------
  Works
@@ -239,31 +255,6 @@ li {
   font-size: 10px;
 }
 
-/*--------------------------------
- About
----------------------------------*/
-.about-section .inner {
-  max-width: 1000px;
-}
-
-.about-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.about-image-wrapper {
-  flex: 0 0 25%;
-  margin-right: 40px;
-}
-
-.about-body {
-  flex: 1;
-}
-
-.about-body p:not(:last-child) {
-  margin-bottom: 20px;
-}
 
 /*--------------------------------
  Skill

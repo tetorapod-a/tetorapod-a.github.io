@@ -17,6 +17,10 @@
   <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,9 +29,8 @@
     <!-- .header -->
     <header class="header">
       <h1 class="logo">
-        <span class="logo-name">test</span>
-        <span class="logo-title">PORTFOLIO</span>
-        <span class="logo-text">test</span>
+        <span class="logo-title">Kenichiro's Portfolio</span>
+        <span class="logo-text">IT Engineer</span>
       </h1>
     </header>
     <!-- /.header -->
@@ -35,59 +38,98 @@
     <!-- .gnav -->
     <nav class="gnav">
       <ul class="gnav-list">
-        <li class="gnav-item"><a class="gnav-link" href="#feature-section">FEATURE</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+        <li class="gnav-item">
+          <i class="far fa-user"></i>
+          <a class="gnav-link" href="#about-section">About</a>
+        </li>
+        <li class="gnav-item">
+          <i class="fas fa-laptop-code"></i>
+          <a class="gnav-link" href="#works-section">Works</a>
+        </li>
+        <li class="gnav-item">
+          <i class="fas fa-code"></i>
+          <a class="gnav-link" href="#skill-section">Skill</a>
+        </li>
+        <li class="gnav-item">
+          <i class="far fa-paper-plane"></i>
+          <a class="gnav-link" href="#contact-section">Contact</a>
+        </li>
       </ul>
     </nav>
     <!-- /.gnav -->
 
     <main class="content">
 
-      <!-- .feature-section -->
-      <section class="feature-section section" id="feature-section">
+      <!-- .about-secion -->
+      <section class="about-section section" id="about-section">
         <div class="inner">
           <div class="section-heading">
-            <h2 class="heading-primary">FEATURE</h2>
+            <h3 class="heading-primary">ABOUT</h3>
+            <h2 class="mb-2">自己紹介</h2>
           </div>
-          <p class="section-lead">
-            最新の制作実績です。
-          </p>
-          <div class="section-body feature">
-            <div class="feature-item">
-              <div class="feature-image-wrapper">
-                <img class="feature-image" src="img/feature/feature.jpg" alt="">
-              </div>
-              <div class="feature-body">
-                <p>
-                  作品タイトル：<br>●●●●● <a href="#">http://●●●.com</a></p>
-                <p>担当：<br>
-                  Design / Coding / WordPress
-                <p>制作期間：<br>●ヶ月</p>
-                </p>
-                <p> コメント：<br>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          <div class="section-lead">
+          </div>
+          <div class="section-body about">
+            <div class="about-item">
+              <div class="about-image-wrapper">
+                <img class="about-image" src="./img/profile/my_prof.png" alt="画像"></div>
+              <div class="about-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Name</th>
+                      <td>西脇健一朗</td>
+                    </tr>
+                    <tr>
+                      <th>Birthday</th>
+                      <td>1995/6/8</td>
+                    </tr>
+                    <tr>
+                      <th>GitHub</th>
+                      <td>
+                        <a href="https://github.com/tetorapod-a" target="_blank" class="fav-git">
+                          <i class="fab fa-github"></i>
+                          tetorapod-a
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Qiita</th>
+                      <td>
+                        <a href="https://qiita.com/tetorapod-a">
+                          <img src="img/icons/qiita.png" width="15" />
+                          tetorapod-a
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Twitter</th>
+                      <td>
+                        <a href="/">
+                          <i class="fab fa-twitter"></i>
+                          xxxxxx
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="about-text">
+                  初めまして！西脇健一朗と申します。</br>2020年5月からプログラミングを学習しています。文系大学を卒業後、入社した会社を退職し現在はITエンジニアを目指し転職活動中です。技術力がものを言う業界でなりたい自分を掴み取るため毎日学習しています。制作物や学習記録など上記アカウントで発信してます！！
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /.feature-secion -->
+      <!-- /.about-secion -->
 
       <!-- .works-secion -->
       <section class="works-section section" id="works-section">
         <div class="inner">
           <div class="section-heading">
-            <h2 class="heading-primary">Works</h2>
+            <h3 class="heading-primary">Works</h3>
+            <h2 class="mb-2">制作実績</h2>
           </div>
-          <p class="section-lead">
-            これまでの制作実績です。
-          </p>
           <div class="section-body works">
             <div class="works-list js-my-gallery">
               <figure class="works-item">
@@ -165,34 +207,7 @@
       </section>
       <!-- /.works-secion -->
 
-      <!-- .about-secion -->
-      <section class="about-section section" id="about-section">
-        <div class="inner">
-          <div class="section-heading">
-            <h2 class="heading-primary">ABOUT</h2>
-          </div>
-          <div class="section-lead">
-            <p>
-              こんにちは！ヤマダハナコと申します。
-            </p>
-          </div>
-          <div class="section-body about">
-            <div class="about-item">
-              <div class="about-image-wrapper">
-                <img class="about-image" src="img/profile/profile.png" alt=""></div>
-              <div class="about-body">
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト&gt;テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.about-secion -->
+      
 
       <!-- .skill-secion -->
       <section class="skill-section section" id="skill-section">
