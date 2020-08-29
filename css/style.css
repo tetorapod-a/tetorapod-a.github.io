@@ -169,7 +169,7 @@ img {
 ---------------------------------*/
 .about-section .inner {
   max-width: 800px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .about-item {
@@ -235,6 +235,11 @@ table td a {
 
 .works-item:nth-of-type(3n) {
   margin-right: 0;
+}
+
+.section-body {
+  padding-top: 60px;
+  margin-bottom: 180px;
 }
 
 .works-body {
@@ -345,6 +350,11 @@ table td a {
   width: 100px;
 }
 
+.colored {
+  font-size: 4.6em;
+  
+}
+
 /*--------------------------------
  Contact
 ---------------------------------*/
@@ -403,7 +413,7 @@ table td a {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ffe8f4;
+  background-color: #00d2ff;
 }
 
 /*media Queries 767
